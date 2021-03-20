@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelWelcome" text="Welcome" />
+      <Label text="Please choose:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <VBox stylesheets="@../css/vBoxLayout.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="buttonVehicle" mnemonicParsing="false" onAction="#vehicleButtonAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Vehicle" />
+            <Button fx:id="buttonEmployee" mnemonicParsing="false" onAction="#employeeButtonAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Employees" />
+            <Button fx:id="buttonStorage" mnemonicParsing="false" onAction="#storageButtonAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Storage" />
+            <Button fx:id="buttonService" mnemonicParsing="false" onAction="#serviceButtonAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Services" />
+            <Button fx:id="buttonEquipment" mnemonicParsing="false" onAction="#equipmentButtonAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Equipment" />
+            <Button fx:id="buttonListOfAllParts" mnemonicParsing="false" onAction="#listOfAllPartsAction" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="List of all parts" />
+         </children>
+         <styleClass>
+            <String fx:value="spacing" />
+            <String fx:value="alignment" />
+         </styleClass>
+      </VBox>
+      <Label text="Reports:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <VBox stylesheets="@../css/vBoxLayout.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="buttonVehiclesReport" mnemonicParsing="false" onAction="#actionButtonVehiclesReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Vehicles report" />
+            <Button fx:id="buttonEmployeeReport" mnemonicParsing="false" onAction="#actionButtonEmployeeReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Employees report" />
+            <Button fx:id="buttonStorageReport" mnemonicParsing="false" onAction="#actionButtonStorageReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Storages report" />
+            <Button fx:id="buttonServiceReport" mnemonicParsing="false" onAction="#actionButtonServiceReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Service report" />
+            <Button fx:id="buttonEquipmentReport" mnemonicParsing="false" onAction="#actionButtonEquipmentReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Equipments report" />
+            <Button fx:id="buttonPartReport" mnemonicParsing="false" onAction="#actionButtonPartReport" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Parts report" />
+         </children>
+         <styleClass>
+            <String fx:value="alignment" />
+            <String fx:value="spacing" />
+         </styleClass>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</GridPane>

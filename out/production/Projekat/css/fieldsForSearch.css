@@ -1,0 +1,6 @@
+.textWidthSmall{
+    -fx-max-width: 150px;
+}
+.textWidthMedium{
+    -fx-max-width: 200px;
+}

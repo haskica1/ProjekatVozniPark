@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Search equipment:" />
+      <TextField fx:id="fieldEquipmentName" promptText="Name of equipment" styleClass="textWidthMedium" stylesheets="@../css/fieldsForSearch.css" GridPane.columnIndex="1" />
+      <Button fx:id="buttonSearch" mnemonicParsing="false" onAction="#actionSearch" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Search" GridPane.columnIndex="2" />
+      <TableView fx:id="equipmentTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+        <columns>
+          <TableColumn fx:id="columnEquipmentId" prefWidth="100.0" text="Equipment id" />
+          <TableColumn fx:id="columnEquipmentName" prefWidth="126.0" text="Equimpent name" />
+            <TableColumn fx:id="columnEquipmentInformation" prefWidth="179.0" text="Equipment information" />
+        </columns>
+      </TableView>
+      <VBox stylesheets="@../css/vBoxLayout.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="buttonListOfAllEqupiment" mnemonicParsing="false" onAction="#actionListOfAllEquipment" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="List of equipment" />
+            <Button fx:id="buttonAddEquipment" mnemonicParsing="false" onAction="#actionAddEquipment" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Add equimpent" />
+            <Button fx:id="buttonUpdateEquipment" mnemonicParsing="false" onAction="#actionUpdate" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Update equipment" />
+            <Button fx:id="buttonDeleteEquipment" mnemonicParsing="false" onAction="#actionDelete" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Delete equipment" />
+         </children>
+         <styleClass>
+            <String fx:value="alignment" />
+            <String fx:value="spacing" />
+         </styleClass>
+      </VBox>
+      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#actionBack" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Back" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</GridPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="4.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Adding new sercive or modification old one" textAlignment="CENTER" wrapText="true" />
+      <Label text="Name of service:" GridPane.rowIndex="1" />
+      <Label text="Date of service:" GridPane.rowIndex="2" />
+      <Label text="Service person:" GridPane.rowIndex="3" />
+      <Label text="Information:" GridPane.rowIndex="4" />
+      <TextField fx:id="fieldNameOfService" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="fieldServicePerson" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextArea fx:id="areaServiceInformation" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="buttonSaveAndBack" mnemonicParsing="false" onAction="#actionSaveAndBack" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Save and back" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <DatePicker fx:id="datePickerServiceDate" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</GridPane>

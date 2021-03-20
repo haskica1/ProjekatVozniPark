@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Adding new employee or modification old employee" textAlignment="CENTER" wrapText="true" />
+      <Label text="First name:" GridPane.rowIndex="1" />
+      <TextField fx:id="fieldFirstName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Last name:" GridPane.rowIndex="2" />
+      <Label text="Telephone number:" GridPane.rowIndex="3" />
+      <Label text="Address:" GridPane.rowIndex="4" />
+      <Label text="User name:" GridPane.rowIndex="5" />
+      <Label text="Password:" GridPane.rowIndex="6" />
+      <Label text="Level of responsibility:" GridPane.rowIndex="7" />
+      <TextField fx:id="fieldLastName" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="fieldTelephoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="fieldAddres" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="fieldUsername" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+       <PasswordField fx:id="fieldPassword" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+       <RadioButton fx:id="radioButtonEmployeeAdministrator" mnemonicParsing="false" text="Employee administrator" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <RadioButton fx:id="radioButtonStorageAdministrator" mnemonicParsing="false" text="Storage administrator" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <RadioButton fx:id="radioButtonServiceAdministrator" mnemonicParsing="false" text="Service administrator" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <RadioButton fx:id="radioButtonMainAdministrator" mnemonicParsing="false" text="The main administrator" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <Button fx:id="buttonsaveAndBack" mnemonicParsing="false" onAction="#actionSaveAndBack" styleClass="buttonWidth" stylesheets="@../css/buttonLayout.css" text="Save and back" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+      <RadioButton fx:id="radioButtonVehicleAdministrator" mnemonicParsing="false" text="Vehicle administrator" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <RadioButton fx:id="radioButtonWorker" mnemonicParsing="false" text="Worker" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</GridPane>
